@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.Models
 {
     public class PrizeModel
     {
@@ -29,5 +29,24 @@ namespace TrackerLibrary
         /// or zero if it is not used. The percentage is fraction of 1.
         /// </summary>
         public double PrizePercentage { get; set; }
+        public PrizeModel()
+        {
+
+        }
+        public PrizeModel(string placeName,string placeNumber,string prizeAmount, string prizePercentage)
+        {
+            PlaceName = placeName;
+            //int placeNumberValue;
+            _ = int.TryParse(placeNumber, out int placeNumberValue);
+            PlaceNumber = placeNumberValue;
+
+            //decimal prizeAmountValue = 0;
+            _ = decimal.TryParse(prizeAmount, out decimal prizeAmountValue);
+            PrizeAmount = prizeAmountValue;
+
+            //double prizePercentageValue = 0;
+            _ = double.TryParse(prizePercentage, out double prizePercentageValue);
+            PrizePercentage = prizePercentageValue; 
+        }
     }
 }
