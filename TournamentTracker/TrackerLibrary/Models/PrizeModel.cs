@@ -36,16 +36,16 @@ namespace TrackerLibrary.Models
         public PrizeModel(string placeName,string placeNumber,string prizeAmount, string prizePercentage)
         {
             PlaceName = placeName;
-            //int placeNumberValue;
-            _ = int.TryParse(placeNumber, out int placeNumberValue);
+            int placeNumberValue = 0;
+            int.TryParse(placeNumber, out placeNumberValue);
             PlaceNumber = placeNumberValue;
 
-            //decimal prizeAmountValue = 0;
-            _ = decimal.TryParse(prizeAmount, out decimal prizeAmountValue);
+            decimal prizeAmountValue = 0;
+            decimal.TryParse(prizeAmount, out prizeAmountValue);
             PrizeAmount = prizeAmountValue;
 
-            //double prizePercentageValue = 0;
-            _ = double.TryParse(prizePercentage, out double prizePercentageValue);
+            double prizePercentageValue = 0;
+            double.TryParse(prizePercentage, out prizePercentageValue);
             PrizePercentage = prizePercentageValue; 
         }
     }

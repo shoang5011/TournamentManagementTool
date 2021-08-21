@@ -15,7 +15,6 @@ namespace TrackerLibrary
         {
             if (database)
             {
-                //TODO: create SQL connection 
                 SqlConnector sql = new SqlConnector();
                 Connections.Add(sql); 
             }
