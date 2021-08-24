@@ -58,7 +58,7 @@ namespace TrackerUI
             this.teamNameValue.Name = "teamNameValue";
             this.teamNameValue.Size = new System.Drawing.Size(524, 43);
             this.teamNameValue.TabIndex = 13;
-            this.teamNameValue.TextChanged += new System.EventHandler(this.tournamentNameValue_TextChanged);
+            //this.teamNameValue.TextChanged += new System.EventHandler(this.tournamentNameValue_TextChanged);
             // 
             // teamNameLabel
             // 
@@ -70,7 +70,7 @@ namespace TrackerUI
             this.teamNameLabel.Size = new System.Drawing.Size(192, 45);
             this.teamNameLabel.TabIndex = 12;
             this.teamNameLabel.Text = "Team Name";
-            this.teamNameLabel.Click += new System.EventHandler(this.tournamentNameLabel_Click);
+            //this.teamNameLabel.Click += new System.EventHandler(this.tournamentNameLabel_Click);
             // 
             // headerlabel
             // 
@@ -82,7 +82,7 @@ namespace TrackerUI
             this.headerlabel.Size = new System.Drawing.Size(272, 62);
             this.headerlabel.TabIndex = 11;
             this.headerlabel.Text = "Create Team";
-            this.headerlabel.Click += new System.EventHandler(this.headerlabel_Click);
+            //this.headerlabel.Click += new System.EventHandler(this.headerlabel_Click);
             // 
             // addMemberButton
             // 
@@ -191,7 +191,7 @@ namespace TrackerUI
             this.emailLabel.Size = new System.Drawing.Size(98, 45);
             this.emailLabel.TabIndex = 34;
             this.emailLabel.Text = "Email";
-            this.emailLabel.Click += new System.EventHandler(this.label1_Click);
+            //this.emailLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // cellphoneValue
             // 
